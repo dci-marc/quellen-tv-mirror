@@ -1,0 +1,1 @@
+import{r}from"./CYM2abHa.js";let t=null;const e=r(document.querySelector(".installbutton"));window.addEventListener("beforeinstallprompt",n=>{t=n,e.removeAttribute("hidden")});e.addEventListener("click",async()=>{if(!t)return;(await t.prompt()).outcome==="accepted"&&(t=null,e.remove())});
